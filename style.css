@@ -1,0 +1,20 @@
+:root {
+  font-size: 18px;
+}
+
+body {
+  font-family: Poppins, sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: DMSans, sans-serif;
+}
+
+.heading-one {
+  font-size: 3rem;
+}
