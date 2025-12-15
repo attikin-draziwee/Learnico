@@ -1,0 +1,14 @@
+.hide {
+  min-height: 0px !important;
+  height: 0px !important;
+  overflow: hidden;
+  animation: hidding 1s linear forwards;
+}
+
+@keyframes hidding {
+  0% {
+  }
+  100% {
+    display: none;
+  }
+}

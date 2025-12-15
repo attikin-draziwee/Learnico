@@ -1,9 +1,12 @@
 :root {
-  font-size: 18px;
+  font-size: 16px;
+  --color-body: #4b5563;
 }
 
 body {
   font-family: Poppins, sans-serif;
+  font-size: 1.125rem;
+  box-sizing: border-box;
 }
 
 h1,
@@ -16,5 +19,53 @@ h6 {
 }
 
 .heading-one {
-  font-size: 3rem;
+  font-size: 3.5rem;
+}
+
+.icon {
+  & use {
+    fill: inherit;
+    display: inline-block;
+  }
+}
+
+.promo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  fill: var(--color-body);
+  color: var(--color-body);
+  background-color: #fff;
+  min-height: 3rem;
+  padding-inline: 2.5rem;
+  transition: 1s min-height ease-in;
+
+  & a.promo__text {
+    color: inherit;
+    text-decoration: none;
+    font-family: "DM Sans";
+    font-size: 0.9375rem;
+    padding-block: 0.5rem;
+  }
+
+  & button.promo__close {
+    position: absolute;
+    right: 2.5rem;
+
+    display: flex;
+    align-items: center;
+
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+
+    & svg.promo__close-icon {
+      width: 2.125rem;
+      height: 2.125rem;
+    }
+  }
 }
